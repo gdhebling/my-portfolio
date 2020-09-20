@@ -575,45 +575,54 @@ header .burger div {
   width: 100%;
 }
 
-.form label {
+.form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form form label {
   margin: auto;
   font-weight: bold;
 }
 
-.form input[type=text],
-.form textarea {
+.form form input[type=text],
+.form form textarea {
   margin: auto;
   display: block;
   width: 100%;
   padding: 0.5rem;
-  border: none;
   background: #fdfdfd;
   border: 1px solid #fdfdfd;
   border-top: 1px solid transparent;
   border-left: 1px solid transparent;
   border-right: 1px solid transparent;
+  border-bottom: 1px solid #78909C;
   margin-bottom: 1.2rem;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
 
-.form input[type=text]:hover,
-.form textarea:hover,
-.form input[type=text]:active,
-.form textarea:active,
-.form input[type=text]:focus,
-.form textarea:focus {
+.form form input[type=text]:hover,
+.form form textarea:hover,
+.form form input[type=text]:active,
+.form form textarea:active,
+.form form input[type=text]:focus,
+.form form textarea:focus {
   border: 1px solid #37474F;
 }
 
-.form textarea {
+.form form textarea {
   resize: none;
   font-family: "Open Sans", sans-serif;
 }
 
-.form input[type=submit] {
-  margin: auto;
-  width: 100%;
+.form form input[type=submit] {
+  margin-left: auto;
 }
 
 /* === Footer === */

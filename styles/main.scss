@@ -497,45 +497,50 @@ header {
 
     width: 100%;
 
-    label {
-        margin: auto;
-        font-weight: bold;
-    }
+    form {
 
-    input[type=text],
-    textarea {
-        margin: auto;
-        display: block;
-        width: 100%;
-        padding: 0.5rem;
-        border: none;
-        background: $lightGreyColor;
-        border: 1px solid $lightGreyColor;
-        border-top: 1px solid transparent;
-        border-left: 1px solid transparent;
-        border-right: 1px solid transparent;
-        margin-bottom: 1.2rem;
+        display: flex;
+        flex-direction: column;
 
-        transition: all 0.1s ease-in-out;
-    }
+        label {
+            margin: auto;
+            font-weight: bold;
+        }
 
-    input[type=text]:hover,
-    textarea:hover,
-    input[type=text]:active,
-    textarea:active,
-    input[type=text]:focus,
-    textarea:focus {
-        border: 1px solid $darkColor;
-    }
+        input[type=text],
+        textarea {
+            margin: auto;
+            display: block;
+            width: 100%;
+            padding: 0.5rem;
+            background: $lightGreyColor;
+            border: 1px solid $lightGreyColor;
+            border-top: 1px solid transparent;
+            border-left: 1px solid transparent;
+            border-right: 1px solid transparent;
+            border-bottom: 1px solid $accentColor;
+            margin-bottom: 1.2rem;
 
-    textarea {
-        resize: none;
-        font-family: $bodyFont;
-    }
+            transition: all 0.1s ease-in-out;
+        }
 
-    input[type=submit] {
-        margin: auto;
-        width: 100%;
+        input[type=text]:hover,
+        textarea:hover,
+        input[type=text]:active,
+        textarea:active,
+        input[type=text]:focus,
+        textarea:focus {
+            border: 1px solid $darkColor;
+        }
+
+        textarea {
+            resize: none;
+            font-family: $bodyFont;
+        }
+
+        input[type=submit] {
+            margin-left: auto;
+        }
     }
 
 }
