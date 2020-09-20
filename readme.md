@@ -1,30 +1,15 @@
-<!-- # My Portfolio
+# My Portfolio
 
 ## The project
 My Front-End Developer Portfolio.
 <br /><br />
-<a href="https://gdhebling.github.io/photographer-portfolio" alt="Website Screenshot">![Website Screenshot](img/readme-website-screenshot.jpg)</a>
+<a href="https://gdhebling.github.io/my-portfolio/" alt="Website Screenshot">![Website Screenshot](img/portfolio-website-screenshot.png)</a>
 
 ### Deployed website
-You can find the deployed website at https://gdhebling.github.io/photographer-portfolio/
-
-## The steps
-### Research
-I started the project researching and looking for inspirations utilizing websites such as Pinterest and Dribbble.
-<br /><br />
-<a href="https://gdhebling.github.io/photographer-portfolio" alt="My Web Design Board on Pinterest">![My Web Design Board on Pinterest](img/readme-pinterest-board.jpg)</a>
-
-### Concept
-Then, with those inspirations in mind, a mockup was made using Figma.
-<br /><br />
-<a href="https://gdhebling.github.io/photographer-portfolio" alt="Website Mockup using Figma">![Website Mockup using Figma](img/readme-website-mockup.jpg)</a>
-
-### Coding
-The coding was made from ground-up with no tutorials, as a way to force me into remembering and finding the best alternatives to the issues I might encounter. The design went through some changes as the project was taking shape. <br />
-p.s.: With extensive use of Google made during the project! 😂
+You can find the deployed website at https://gdhebling.github.io/my-portfolio/
 
 ## Technologies and tools used
-HTML5, CSS3, SCSS/Sass, JavaScript, and Figma. <br />
+HTML5, CSS3, SCSS/Sass, JavaScript. <br />
 
 <p align="left">
     <a href="https://github.com/gdhebling"><img align="center" alt="HTML5" width="26px"
@@ -43,21 +28,6 @@ HTML5, CSS3, SCSS/Sass, JavaScript, and Figma. <br />
             src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" /></a>
 </p>
 
-## Next steps
-**Responsiveness:** <br />
-The Navbar was lacking responsiveness. <br />
-✔ Burger menu implemented for medium and small screen sizes. <br />
-Next step is to study about how to close the menu when an item or "outside" of menu is clicked.
-
-**Form:** <br />
-I'm currently using Formspree as a way to collect submissions from the Contact Form. <br />
-A step will be to learn PHP to implement it on the website.
-
-**Performance:** <br />
-✔ Study about website optimization and performance to reduce loading time. <br />
-➡ Website images downsized to optimize load time. **Result**: **Google Lighthouse's Audit Score** went from 65 to 75.
-➡ Still looking for other ways to optimize load time.
-
 ## That's it!
 Thanks for reading! 😀 <br />
 I'm Guilherme. Front-End Web Developer. <br />
@@ -73,4 +43,4 @@ You can find me on: <br />
 </p>
 
 
-[website]: [https://gdhebling.github.io/photographer-portfolio/] -->
+[website]: [https://gdhebling.github.io/my-portfolio/]
