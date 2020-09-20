@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gui Hebling | Front-End Web Developer</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="shortcut icon" href="./img/favicon-gh.png" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+
+    <script src="https://kit.fontawesome.com/3aa63fbb84.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <!-- Header Starts -->
+
+    <header>
+        <a href="#" class="logo">GH</a>
+        <nav class="nav">
+
+            <ul class="nav__links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <ul class="social-media">
+            <li><a href="https://www.linkedin.com/in/gdhebling" class="social-media__item"><i
+                        class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/gdhebling/" class="social-media__item"><i class="fab fa-github"></i></a>
+            </li>
+            <li><a href="mailto:gdhebling@outlook.com?subject=Contact%20from%20Portfolio" class="social-media__item"><i
+                        class="fas fa-envelope"></i></a></li>
+            <li><a href="https://twitter.com/gdhebling" class="social-media__item"><i class="fab fa-twitter"></i></a>
+            </li>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+    </header>
+
+    <!-- Hero Starts -->
+
+    <section class="hero">
+        <!-- <div class="hero-image">
+            <img src="./img/hero-image-desk.jpg" alt="">
+        </div> -->
+        <div class="hero__text">
+            <p>Hi, I'm</p>
+            <h1>Gui Hebling</h1>
+            <h2>Front-End Web Developer</h2>
+        </div>
+        <div class="cta__text">
+            <a href="#projects" type="button" class="btn btn-primary">Projects</a>
+            <a href="#contact" type="button" class="btn btn-default">Contact</a>
+        </div>
+    </section>
+
+    <!-- Projects Starts -->
+
+    <section class="projects" id="projects">
+
+        <h2 class="section__title">
+            Projects
+        </h2>
+        <p class="section__subtitle">
+            Here you can find some of my projects.
+        </p>
+
+        <div class="projects-content">
+
+            <div class="card">
+                <div class="card__img">
+                    <a href="#"><img src="./img/amazon-clone-website-home-screenshot.png" alt="" class="card__image"
+                            width="480" height="260"></a></div>
+                <div class="card__description">
+                    <h3 class="card__title">Amazon Clone</h3>
+                    <p class="card__about">
+                        <span>Web application created with React and deployed using Google Firebase.</span>
+                        <span>React Router for UI, React Context API for basket, user authentication, payment
+                            functionality with Stripe.</span>
+                    </p>
+                    <div class="card__btn">
+                        <a href="#" type="button" class="btn btn-primary">Live Demo</a>
+                        <a href="#" type="button" class="btn btn-default">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__img">
+                    <a href="#">
+                        <img src="./img/photographer-portfolio-website-screenshot.jpg" alt="" class="card__image"
+                            width="480" height="260">
+                    </a>
+                </div>
+                <div class="card__description">
+                    <h3 class="card__title">Photographer Portfolio</h3>
+                    <p class="card__about">
+                        <span>Responsive web design coded from scratch with the use of Flexbox in CSS, Vanilla
+                            JavaScript for
+                            responsive navbar and hamburger menu, and a fully functioning contact form linked to
+                            Formspree.</span>
+                        <span>I designed the website mockup using Figma. </span>
+                    </p>
+                    <div class="card__btn">
+                        <a href="#" type="button" class="btn btn-primary">Live Demo</a>
+                        <a href="#" type="button" class="btn btn-default">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__img">
+                    <a href="#">
+                        <img src="./img/store-locator-website-screenshot.png" alt="" class="card__image" width="480"
+                            height="260">
+                    </a>
+                </div>
+                <div class="card__description">
+                    <h3 class="card__title">Google Maps Store Locator</h3>
+                    <p class="card__about">
+                        <span>A website with search functionality integrated with the Google Maps API.</span>
+                        <span>Search input looks for JSON list of stores and returns the filtered results on the
+                            map.</span>
+                    </p>
+                    <div class="card__btn">
+                        <a href="#" type="button" class="btn btn-primary">Live Demo</a>
+                        <a href="#" type="button" class="btn btn-default">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__img">
+                    <a href="#"><img src="./img/tech-company-website-screenshot.png" alt="" class="card__image"
+                            width="480" height="260"></a></div>
+                <div class="card__description">
+                    <h3 class="card__title">Tech Company Website</h3>
+                    <p class="card__about">
+                        <span>Clean and modern website developed using Tailwind CSS (CSS Framework).</span>
+                    </p>
+                    <div class="card__btn">
+                        <a href="#" type="button" class="btn btn-primary">Live Demo</a>
+                        <a href="#" type="button" class="btn btn-default">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Starts -->
+
+    <section class="about" id="about">
+
+        <h2 class="section__title">
+            ABOUT
+        </h2>
+        <div class="about-content">
+            <div class="about-photographer-image">
+                <img src="./img/gui-hebling.jpg" alt="" class="card__image" width="400" height="400">
+            </div>
+            <div class="about-text">
+                <span>
+                    <h3>Hi!</h3>
+                </span>
+                <span>My name is <b>Guilherme Hebling</b>.</span>
+
+                <span>I'm a Front-End Web Developer based in Oslo, Norway.</span>
+                <span>I have a strong aesthetic sense and an eye for user interfaces
+                </span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Starts -->
+
+    <section class="contact" id="contact">
+        <h2 class="section__title">
+            LET'S GET IN TOUCH
+        </h2>
+
+        <div class="form">
+
+            <form action="https://formspree.io/mvovooyv" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <br>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <br>
+                    <input type="text" name="email" id="email" placeholder="Enter your e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Enter your message"
+                        required></textarea>
+                </div>
+
+                <input class="btn btn-primary" type="submit" value="Send">
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Footer Starts -->
+
+    <footer>
+        <p>Let's connect!</p>
+        <ul class="social-media">
+            <li><a href="https://www.linkedin.com/in/gdhebling" class="social-media__item"><i
+                        class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/gdhebling/" class="social-media__item"><i class="fab fa-github"></i></a>
+            </li>
+            <li><a href="mailto:gdhebling@outlook.com?subject=Contact%20from%20Portfolio%20Website"
+                    class="social-media__item"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="https://twitter.com/gdhebling" class="social-media__item"><i class="fab fa-twitter"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
