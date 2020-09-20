@@ -179,12 +179,12 @@ header {
 
     .logo {
         cursor: pointer;
-        font-size: .875em;
+        font-size: 1.2em;
         font-family: $titleFont;
         color: $darkGreyColor;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         font-weight: 900;
-        letter-spacing: 0.1rem;
+        // letter-spacing: 0.1rem;
 
         transition: all 0.3s ease 0s;
 
