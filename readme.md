@@ -1,7 +1,8 @@
 # My Portfolio
 
 ## The project
-My Front-End Developer Portfolio.
+My Front-End Developer Portfolio.  
+Clean and modern web design for my portfolio.
 <br /><br />
 <a href="https://gdhebling.github.io/my-portfolio/" alt="Website Screenshot">![Website Screenshot](img/portfolio-website-screenshot.png)</a>
 
