@@ -45,10 +45,17 @@ textarea {
 
 .section__title {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
   text-align: center;
-  margin: 2.5rem 0;
+  margin: 2rem 0;
+}
+
+.section__subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .btn {
@@ -346,7 +353,7 @@ header .burger div {
   margin-bottom: 1rem;
 }
 
-.projects-content {
+.content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,7 +369,7 @@ header .burger div {
           justify-content: center;
 }
 
-.projects-content .card {
+.content .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,8 +383,8 @@ header .burger div {
   margin: 2rem;
 }
 
-.projects-content .card .card__img,
-.projects-content .card .card__description {
+.content .card .card__img,
+.content .card .card__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,7 +394,7 @@ header .burger div {
   margin: 0 1rem;
 }
 
-.projects-content .card .card__img {
+.content .card .card__img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -396,12 +403,12 @@ header .burger div {
           justify-content: center;
 }
 
-.projects-content .card .card__img img {
+.content .card .card__img img {
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.projects-content .card .card__description {
+.content .card .card__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -414,13 +421,13 @@ header .burger div {
           align-items: flex-start;
 }
 
-.projects-content .card .card__description h3,
-.projects-content .card .card__description p,
-.projects-content .card .card__description .card__btn {
+.content .card .card__description h3,
+.content .card .card__description p,
+.content .card .card__description .card__btn {
   margin: 1rem 0;
 }
 
-.projects-content .card .card__description .card__about {
+.content .card .card__description .card__about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -430,7 +437,7 @@ header .burger div {
           flex-direction: column;
 }
 
-.projects-content .card .card__description .btn {
+.content .card .card__description .btn {
   margin-right: 1rem;
 }
 
@@ -451,10 +458,14 @@ header .burger div {
           justify-content: center;
 }
 
-.about-content {
+.about__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -465,35 +476,67 @@ header .burger div {
   margin: 2rem;
 }
 
-.about-content .about-photographer-image,
-.about-content .about-text {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+.about__content .about__text,
+.about__content .about__skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: auto;
-  padding: 0 1rem;
-}
-
-.about-content .about-photographer-image img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.about-content .about-text {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   line-height: 2rem;
+  margin: 1rem;
+}
+
+.about__content .about__text .card__btn {
+  margin-top: 1rem;
+}
+
+.about__content .about__skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.about__content .about__skills .skill__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.about__content .about__skills .skill__row .skill__description {
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+  padding: 1rem;
+}
+
+.about__content .about__skills .skill__row .skill__description .skill__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /* === Contact === */
@@ -693,25 +736,26 @@ footer .social-media .fa-twitter:hover {
             justify-content: center;
   }
   .card .card__description {
-    background-color: lightgreen;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    max-width: 90%;
     margin: 0 auto;
     text-align: center;
   }
-  .about-content {
+  .card .card__description .card__title {
+    width: 100%;
+    text-align: center;
+  }
+  .card .card__description .card__btn {
+    width: 100%;
+  }
+  .about__content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .about-content .about-text {
+  .about__content .about__text {
     text-align: center;
-    margin: 2rem 0 0 0;
+    margin: 0;
   }
   .form {
     width: 90%;

@@ -55,10 +55,17 @@ textarea {
 
 .section__title {
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 800;
     text-transform: uppercase;
     text-align: center;
-    margin: 2.5rem 0;
+    margin: 2rem 0;
+}
+
+.section__subtitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .btn {
@@ -354,7 +361,7 @@ header {
     }
 }
 
-.projects-content {
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -418,36 +425,52 @@ header {
     justify-content: center;
 }
 
-.about-content {
+.about__content {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
     width: 90%;
     margin: 2rem;
 
-
-    .about-photographer-image,
-    .about-text {
-        flex: 1;
+    .about__text,
+    .about__skills {
         display: flex;
-        flex-wrap: wrap;
-
-        justify-content: center;
-        margin: auto;
-        padding: 0 1rem;
-    }
-
-    .about-photographer-image {
-        img {
-            object-fit: cover;
-        }
-    }
-
-    .about-text {
         flex-direction: column;
-        text-align: left;
+        align-items: left;
+        justify-content: center;
         line-height: 2rem;
+        margin: 1rem;
+    }
+
+    .about__text .card__btn {
+        margin-top: 1rem;
+    }
+
+    .about__skills {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+
+        .skill__row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            margin: 1rem 0;
+
+            .skill__description {
+                flex-basis: 33.33%;
+                padding: 1rem;
+
+                .skill__items {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
     }
 }
 
@@ -650,23 +673,31 @@ footer {
         justify-content: center;
 
         .card__description {
-            background-color: lightgreen;
-            display: flex;
-            justify-content: center;
+            // background-color: lightgreen;
+            max-width: 90%;
             margin: 0 auto;
             text-align: center;
+
+            .card__title {
+                width: 100%;
+                text-align: center;
+            }
+
+            .card__btn {
+                width: 100%;
+            }
         }
     }
 
 
     // ABOUT 
 
-    .about-content {
+    .about__content {
         flex-direction: column;
 
-        .about-text {
+        .about__text {
             text-align: center;
-            margin: 2rem 0 0 0;
+            margin: 0;
         }
     }
 
