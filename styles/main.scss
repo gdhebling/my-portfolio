@@ -53,6 +53,13 @@ textarea {
     outline: none;
 }
 
+// Scrolling fix
+#projects,
+#about,
+#contact {
+    scroll-margin-top: 3rem;
+}
+
 .section__title {
     font-size: 2rem;
     font-weight: 800;
@@ -60,8 +67,6 @@ textarea {
     text-align: center;
     margin: 2rem 0;
     position: relative;
-
-    scroll-margin-top: 5rem;
 
     &::after {
         content: "";
@@ -726,7 +731,6 @@ footer {
         justify-content: center;
 
         .card__description {
-            // background-color: lightgreen;
             max-width: 90%;
             margin: 0 auto;
             text-align: center;
@@ -747,17 +751,53 @@ footer {
 
     .about__content {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
         .about__text {
             text-align: center;
-            margin: 0;
+            margin-bottom: 1rem;
+        }
+
+        .about__skills {
+
+            .skill__row {
+
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .skill__description {
+                    .skill__title {
+                        margin-top: 1rem;
+                    }
+                }
+            }
         }
     }
 
-    // FORM
+    // CONTACT
+
+    .contact {
+        .contact__content {
+            width: 80%;
+
+            .contact__text {
+                width: 100%;
+                margin-bottom: 2rem;
+                text-align: center;
+            }
+        }
+    }
 
     .form {
         width: 90%;
+
+        form {
+            input[type=submit] {
+                margin: auto;
+            }
+        }
     }
 }
 
