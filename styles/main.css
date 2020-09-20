@@ -49,13 +49,25 @@ textarea {
   text-transform: uppercase;
   text-align: center;
   margin: 2rem 0;
+  position: relative;
+  scroll-margin-top: 5rem;
+}
+
+.section__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  right: 30%;
+  height: 1px;
+  margin: 0 auto;
+  background: currentColor;
 }
 
 .section__subtitle {
   font-size: 1.2rem;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 2rem;
 }
 
 .btn {
@@ -406,6 +418,8 @@ header .burger div {
 .content .card .card__img img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 480px;
+  height: 260px;
 }
 
 .content .card .card__description {
@@ -476,6 +490,12 @@ header .burger div {
   margin: 2rem;
 }
 
+.about__content .section__title {
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
 .about__content .about__text,
 .about__content .about__skills {
   display: -webkit-box;
@@ -485,14 +505,14 @@ header .burger div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   line-height: 2rem;
-  margin: 1rem;
+  margin: 1rem 2rem;
 }
 
 .about__content .about__text .card__btn {
@@ -520,14 +540,18 @@ header .burger div {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 1rem 0;
+  margin: 1rem;
 }
 
 .about__content .about__skills .skill__row .skill__description {
   -ms-flex-preferred-size: 33.33%;
       flex-basis: 33.33%;
-  padding: 0 1rem;
+  padding: 0 2rem;
   text-align: center;
+}
+
+.about__content .about__skills .skill__row .skill__description .skill__title {
+  color: #37474F;
 }
 
 .about__content .about__skills .skill__row .skill__description .skill__items {
@@ -545,8 +569,6 @@ header .burger div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -557,18 +579,47 @@ header .burger div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1rem 10%;
-  width: 100%;
 }
 
 .contact .contact__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  margin: 2rem;
+}
+
+.contact .contact__content .contact__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 2rem;
+  margin: 1rem;
+  width: 100%;
+}
+
+.contact .contact__content .contact__text .card__btn {
+  margin-top: 1rem;
 }
 
 .form {
@@ -779,6 +830,59 @@ footer .social-media .fa-twitter:hover {
   }
   .form {
     width: 90%;
+  }
+}
+
+@media screen and (min-width: 3840px) {
+  header .logo,
+  header .nav__links li,
+  header .social-media i {
+    font-size: 2rem;
+  }
+  .section__title {
+    font-size: 4rem;
+  }
+  .section__subtitle {
+    font-size: 2rem;
+  }
+  .btn {
+    font-size: 2rem;
+  }
+  .content .card .card__img img {
+    max-width: 960px;
+    width: 960px;
+    height: 520px;
+  }
+  .card__description h3,
+  .card__description p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .about__text h3,
+  .about__text span {
+    font-size: 2rem;
+    line-height: 4rem;
+  }
+  .about__skills .about__text,
+  .about__skills h3,
+  .about__skills p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .contact__content .contact__text span {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  form label,
+  form input[type=text],
+  form textarea {
+    font-size: 2rem;
+  }
+  footer p {
+    font-size: 2rem;
+  }
+  footer .social-media i {
+    font-size: 2rem;
   }
 }
 

@@ -59,13 +59,27 @@ textarea {
     text-transform: uppercase;
     text-align: center;
     margin: 2rem 0;
+    position: relative;
+
+    scroll-margin-top: 5rem;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+        right: 30%;
+        height: 1px;
+        margin: 0 auto;
+        background: currentColor;
+    }
+
 }
 
 .section__subtitle {
     font-size: 1.2rem;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 2rem;
 }
 
 .btn {
@@ -388,6 +402,8 @@ header {
 
             img {
                 object-fit: cover;
+                width: 480px;
+                height: 260px;
             }
         }
 
@@ -434,14 +450,20 @@ header {
     width: 90%;
     margin: 2rem;
 
+    .section__title {
+        margin-top: 2rem;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+
     .about__text,
     .about__skills {
         display: flex;
         flex-direction: column;
-        align-items: left;
+        align-items: center;
         justify-content: center;
         line-height: 2rem;
-        margin: 1rem;
+        margin: 1rem 2rem;
     }
 
     .about__text .card__btn {
@@ -459,12 +481,16 @@ header {
             flex-direction: row;
             flex-wrap: wrap;
 
-            margin: 1rem 0;
+            margin: 1rem;
 
             .skill__description {
                 flex-basis: 33.33%;
-                padding: 0 1rem;
+                padding: 0 2rem;
                 text-align: center;
+
+                .skill__title {
+                    color: $darkColor;
+                }
 
                 .skill__items {
                     display: flex;
@@ -479,17 +505,33 @@ header {
 
 .contact {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    padding: 1rem 10%;
-    width: 100%;
-
     .contact__content {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 50%;
+        margin: 2rem;
+
+        .contact__text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            line-height: 2rem;
+            margin: 1rem;
+            width: 100%;
+
+            .card__btn {
+                margin-top: 1rem;
+            }
+
+        }
     }
 }
 
@@ -716,6 +758,97 @@ footer {
 
     .form {
         width: 90%;
+    }
+}
+
+// Media queries for 4k displays
+
+@media screen and (min-width: 3840px) {
+
+    header {
+
+        .logo,
+        .nav__links li,
+        .social-media i {
+            font-size: 2rem;
+        }
+
+    }
+
+    .section__title {
+        font-size: 4rem;
+    }
+
+    .section__subtitle {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 2rem;
+    }
+
+    // Projects
+
+    .content .card .card__img {
+        img {
+            max-width: 960px;
+            width: 960px;
+            height: 520px;
+        }
+    }
+
+    .card__description {
+
+        h3,
+        p {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .about__text h3,
+    .about__text span {
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+
+    .about__skills {
+
+        .about__text,
+        h3,
+        p {
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+    }
+
+    .contact__content {
+        .contact__text {
+
+            span {
+                font-size: 2rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    form {
+
+        label,
+        input[type=text],
+        textarea {
+            font-size: 2rem;
+        }
+    }
+
+    footer {
+        p {
+            font-size: 2rem;
+        }
+
+        .social-media i {
+            font-size: 2rem;
+        }
     }
 }
 
