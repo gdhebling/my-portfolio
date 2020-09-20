@@ -52,7 +52,7 @@ textarea {
 }
 
 .section__subtitle {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 2rem;
@@ -526,7 +526,8 @@ header .burger div {
 .about__content .about__skills .skill__row .skill__description {
   -ms-flex-preferred-size: 33.33%;
       flex-basis: 33.33%;
-  padding: 1rem;
+  padding: 0 1rem;
+  text-align: center;
 }
 
 .about__content .about__skills .skill__row .skill__description .skill__items {
@@ -560,8 +561,18 @@ header .burger div {
   width: 100%;
 }
 
+.contact .contact__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .form {
-  width: 70%;
+  width: 100%;
 }
 
 .form label {
