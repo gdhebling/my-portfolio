@@ -4,10 +4,10 @@
 My Front-End Developer Portfolio.  
 Clean and modern web design for my portfolio.
 <br /><br />
-<a href="https://gdhebling.github.io/my-portfolio/" alt="Website Screenshot">![Website Screenshot](img/portfolio-website-screenshot.png)</a>
+<a href="https://gdhebling.com/" alt="Website Screenshot">![Website Screenshot](img/portfolio-website-screenshot.png)</a>
 
 ### Deployed website
-You can find the deployed website at https://gdhebling.github.io/my-portfolio/
+You can find the deployed website at https://gdhebling.com/
 
 ## Technologies and tools used
 HTML5, CSS3, SCSS/Sass, JavaScript. <br />
