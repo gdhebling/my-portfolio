@@ -474,6 +474,12 @@ header {
         margin-top: 1rem;
     }
 
+    .card__btn {
+        .btn {
+            margin: 0 0.5rem;
+        }
+    }
+
     .about__skills {
         display: flex;
         flex-direction: column;
