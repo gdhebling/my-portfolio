@@ -747,6 +747,17 @@ footer .social-media .fa-twitter:hover {
   color: #1DA1F2;
 }
 
+/* 404 Page 
+=============== */
+.page-not-found {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.page-not-found .hero .hero__text img {
+  height: 500px;
+}
+
 /* Media Queries
 =============== */
 @media (max-width: 780px) {
