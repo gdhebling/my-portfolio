@@ -666,6 +666,7 @@ footer {
     .hero {
         .hero__text {
             img {
+                object-fit: contain;
                 height: 500px;
                 margin: 2rem 0;
             }

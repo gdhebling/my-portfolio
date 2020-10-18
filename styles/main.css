@@ -755,6 +755,8 @@ footer .social-media .fa-twitter:hover {
 }
 
 .page-not-found .hero .hero__text img {
+  -o-object-fit: contain;
+     object-fit: contain;
   height: 500px;
   margin: 2rem 0;
 }
