@@ -548,6 +548,7 @@ header .burger div {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
   margin: 1rem;
 }
 
