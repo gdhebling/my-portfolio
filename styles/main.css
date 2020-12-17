@@ -84,8 +84,8 @@ textarea {
   min-width: 8rem;
   text-decoration: none;
   font-size: 1rem;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .btn:hover, .btn:focus, .btn:active {
@@ -125,10 +125,8 @@ textarea {
   background: currentColor;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transition: -webkit-transform 250ms ease-in;
-  transition: -webkit-transform 250ms ease-in;
-  transition: transform 250ms ease-in;
-  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .btn-default:hover::after {
@@ -162,8 +160,8 @@ header {
   width: 100%;
   background-color: #fdfdfd;
   min-height: 7vh;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
   /* Burger Menu
     =============== */
 }
@@ -175,8 +173,8 @@ header .logo {
   color: #212121;
   font-weight: 900;
   letter-spacing: -0.1rem;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 header .logo:hover, header .logo:active {
@@ -194,8 +192,8 @@ header .nav__links li {
 }
 
 header .nav__links li a {
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
   color: #212121;
   position: relative;
 }
@@ -219,10 +217,8 @@ header .nav__links li a::after {
   background: currentColor;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transition: -webkit-transform 250ms ease-in;
-  transition: -webkit-transform 250ms ease-in;
-  transition: transform 250ms ease-in;
-  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 header .nav__links li a:hover::after {
@@ -244,8 +240,8 @@ header .social-media i {
   font-size: 1.1rem;
   display: inline-block;
   padding: 0 .5rem;
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
   color: #212121;
 }
 
@@ -275,8 +271,8 @@ header .burger div {
   height: 2px;
   background-color: #212121;
   margin: 4px;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 /* Body 
@@ -669,8 +665,8 @@ header .burger div {
   border-right: 1px solid transparent;
   border-bottom: 1px solid #78909C;
   margin-bottom: 1.2rem;
-  -webkit-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .form form input[type=text]:hover,
@@ -733,8 +729,8 @@ footer .social-media i {
   font-size: 1.1rem;
   display: inline-block;
   padding: 0 .5rem;
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
   color: #fdfdfd;
 }
 
@@ -794,10 +790,8 @@ footer .social-media .fa-twitter:hover {
     width: 50vw;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
-    -webkit-transition: -webkit-transform 0.5s ease-in;
-    transition: -webkit-transform 0.5s ease-in;
-    transition: transform 0.5s ease-in;
-    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
   }
   header .nav__links li {
     opacity: 0;

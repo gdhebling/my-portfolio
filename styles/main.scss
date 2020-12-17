@@ -12,12 +12,6 @@ $lightGreyColor: #fdfdfd;
 
 $transition: 0.3s ease;
 
-// @mixin defaultTransition {
-
-// }
-
-
-
 /* Global Styles 
 =============== */
 
@@ -105,7 +99,7 @@ textarea {
     text-decoration: none;
     font-size: 1rem;
 
-    transition: all 0.1s ease-in-out;
+    transition: $transition;
 
     &:hover,
     &:focus,
@@ -152,7 +146,7 @@ textarea {
         background: currentColor;
 
         transform: scaleX(0);
-        transition: transform 250ms ease-in;
+        transition: $transition;
     }
 
     &:hover::after {
@@ -184,7 +178,7 @@ header {
 
     min-height: 7vh;
 
-    transition: all 0.3s ease-in-out;
+    transition: $transition;
 
     .logo {
         cursor: pointer;
@@ -195,7 +189,7 @@ header {
         letter-spacing: -0.1rem;
         // text-transform: uppercase;
 
-        transition: all 0.3s ease 0s;
+        transition: $transition;
 
         &:hover,
         &:active {
@@ -215,7 +209,7 @@ header {
             padding: 0 1.5rem;
 
             a {
-                transition: all 0.3s ease 0s;
+                transition: $transition;
                 color: $darkGreyColor;
 
                 position: relative;
@@ -241,7 +235,7 @@ header {
                     background: currentColor;
 
                     transform: scaleX(0);
-                    transition: transform 250ms ease-in;
+                    transition: $transition;
                 }
 
                 &:hover::after {
@@ -260,7 +254,7 @@ header {
             font-size: 1.1rem;
             display: inline-block;
             padding: 0 .5rem;
-            transition: all 0.3s ease-in-out 0s;
+            transition: $transition;
             color: $darkGreyColor;
         }
 
@@ -296,7 +290,7 @@ header {
             background-color: $darkGreyColor;
             margin: 4px;
 
-            transition: all 0.2s ease;
+            transition: $transition;
         }
     }
 
@@ -595,7 +589,7 @@ header {
             border-bottom: 1px solid $accentColor;
             margin-bottom: 1.2rem;
 
-            transition: all 0.1s ease-in-out;
+            transition: $transition;
         }
 
         input[type=text]:hover,
@@ -650,7 +644,7 @@ footer {
             font-size: 1.1rem;
             display: inline-block;
             padding: 0 .5rem;
-            transition: all 0.3s ease-in-out 0s;
+            transition: $transition;
             color: $lightGreyColor;
         }
 
@@ -725,7 +719,7 @@ footer {
             width: 50vw;
 
             transform: translateX(100%);
-            transition: transform 0.5s ease-in;
+            transition: $transition;
 
             li {
 
