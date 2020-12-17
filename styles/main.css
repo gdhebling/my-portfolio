@@ -424,6 +424,12 @@ header .burger div {
      object-fit: cover;
   width: 480px;
   height: 260px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.content .card .card__img img:hover, .content .card .card__img img:focus, .content .card .card__img img:active {
+  opacity: 0.8;
 }
 
 .content .card .card__description {

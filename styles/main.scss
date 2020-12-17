@@ -9,6 +9,15 @@ $darkColor: #37474F;
 $accentColor: #78909C;
 $darkGreyColor: #212121;
 $lightGreyColor: #fdfdfd;
+
+$transition: 0.3s ease;
+
+// @mixin defaultTransition {
+
+// }
+
+
+
 /* Global Styles 
 =============== */
 
@@ -404,11 +413,22 @@ header {
             align-items: center;
             justify-content: center;
 
+
             img {
                 object-fit: cover;
                 width: 480px;
                 height: 260px;
+                transition: $transition;
+
+
+                &:hover,
+                &:focus,
+                &:active {
+                    opacity: 0.8;
+                    // filter: blur(1px);
+                }
             }
+
         }
 
         .card__description {
