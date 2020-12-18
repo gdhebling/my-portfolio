@@ -408,6 +408,12 @@ header {
 
         width: 90%;
         margin: 2rem;
+        padding: 2rem;
+
+        border: 1px solid transparent;
+
+        border-radius: 1rem;
+        box-shadow: 10px 10px 10px rgba($darkColor, 0.05);
 
         .card__img,
         .card__description {
@@ -791,6 +797,11 @@ footer {
             align-items: center;
             justify-content: center;
 
+            margin: 1rem;
+            padding: 1rem;
+
+            border: 1px solid transparent;
+
             .card__description {
                 max-width: 90%;
                 margin: 0 auto;
@@ -809,6 +820,7 @@ footer {
             .card__img {
                 img {
                     object-fit: contain;
+                    height: auto;
                 }
             }
         }

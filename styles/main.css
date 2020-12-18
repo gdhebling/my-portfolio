@@ -403,6 +403,11 @@ header .burger div {
           justify-content: center;
   width: 90%;
   margin: 2rem;
+  padding: 2rem;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  -webkit-box-shadow: 10px 10px 10px rgba(55, 71, 79, 0.05);
+          box-shadow: 10px 10px 10px rgba(55, 71, 79, 0.05);
 }
 
 .content .card .card__img,
@@ -841,6 +846,9 @@ footer .social-media .fa-twitter:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid transparent;
   }
   .content .card .card__description {
     max-width: 90%;
@@ -857,6 +865,7 @@ footer .social-media .fa-twitter:hover {
   .content .card .card__img img {
     -o-object-fit: contain;
        object-fit: contain;
+    height: auto;
   }
   .about__content {
     -webkit-box-orient: vertical;
