@@ -171,14 +171,14 @@ header .logo-div i {
   content: url(../assets/christmas-icon.svg);
   display: block;
   position: absolute;
-  height: 1rem;
-  -webkit-transform: rotateY(180deg) translateX(0.3rem) rotate(10deg);
-          transform: rotateY(180deg) translateX(0.3rem) rotate(10deg);
+  height: 1.2rem;
+  -webkit-transform: rotateY(180deg) translateX(0.35rem) rotate(10deg);
+          transform: rotateY(180deg) translateX(0.35rem) rotate(10deg);
 }
 
 header .logo-div .logo {
   cursor: pointer;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-family: "Nunito", sans-serif;
   color: #212121;
   font-weight: 900;

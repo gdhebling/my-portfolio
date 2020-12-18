@@ -186,13 +186,13 @@ header {
             content: url(../assets/christmas-icon.svg);
             display: block;
             position: absolute;
-            height: 1rem;
-            transform: rotateY(180deg) translateX(0.3rem) rotate(10deg);
+            height: 1.2rem;
+            transform: rotateY(180deg) translateX(0.35rem) rotate(10deg);
         }
 
         .logo {
             cursor: pointer;
-            font-size: 1.2em;
+            font-size: 1.4em;
             font-family: $titleFont;
             color: $darkGreyColor;
             font-weight: 900;
