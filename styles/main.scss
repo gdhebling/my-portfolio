@@ -181,22 +181,34 @@ header {
 
     transition: $transition;
 
-    .logo {
-        cursor: pointer;
-        font-size: 1.2em;
-        font-family: $titleFont;
-        color: $darkGreyColor;
-        font-weight: 900;
-        letter-spacing: -0.1rem;
-        // text-transform: uppercase;
-
-        transition: $transition;
-
-        &:hover,
-        &:active {
-            outline: none;
-            color: $accentColor;
+    .logo-div {
+        i {
+            content: url(../assets/christmas-icon.svg);
+            display: block;
+            position: absolute;
+            height: 1rem;
+            transform: rotateY(180deg) translateX(0.3rem) rotate(10deg);
         }
+
+        .logo {
+            cursor: pointer;
+            font-size: 1.2em;
+            font-family: $titleFont;
+            color: $darkGreyColor;
+            font-weight: 900;
+            letter-spacing: -0.1rem;
+            // text-transform: uppercase;
+
+            transition: $transition;
+
+            &:hover,
+            &:active {
+                outline: none;
+                color: $accentColor;
+            }
+
+        }
+
     }
 
     .nav__links {
