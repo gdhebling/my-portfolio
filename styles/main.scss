@@ -406,14 +406,16 @@ header {
         align-items: center;
         justify-content: center;
 
-        width: 90%;
+        width: 80%;
         margin: 2rem;
         padding: 2rem;
 
         border: 1px solid transparent;
 
         border-radius: 1rem;
-        box-shadow: 10px 10px 10px rgba($darkColor, 0.05);
+        box-shadow:
+            -10px -10px 10px rgba($accentColor, 0.04),
+            10px 10px 10px rgba($darkColor, 0.05);
 
         .card__img,
         .card__description {

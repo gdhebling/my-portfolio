@@ -401,13 +401,13 @@ header .burger div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 90%;
+  width: 80%;
   margin: 2rem;
   padding: 2rem;
   border: 1px solid transparent;
   border-radius: 1rem;
-  -webkit-box-shadow: 10px 10px 10px rgba(55, 71, 79, 0.05);
-          box-shadow: 10px 10px 10px rgba(55, 71, 79, 0.05);
+  -webkit-box-shadow: -10px -10px 10px rgba(120, 144, 156, 0.04), 10px 10px 10px rgba(55, 71, 79, 0.05);
+          box-shadow: -10px -10px 10px rgba(120, 144, 156, 0.04), 10px 10px 10px rgba(55, 71, 79, 0.05);
 }
 
 .content .card .card__img,
