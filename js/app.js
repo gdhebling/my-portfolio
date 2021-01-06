@@ -30,3 +30,13 @@ const navSlide = () => {
 }
 
 navSlide();
+
+
+const navLinks = document.querySelectorAll('.nav__links li a');
+
+navLinks.forEach(button => {
+    button.addEventListener('click', function () {
+        navLinks.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+    })
+})
