@@ -217,6 +217,7 @@ header {
                 position: relative;
 
 
+
                 &:hover,
                 &:focus {
                     color: $accentColor;
@@ -243,6 +244,11 @@ header {
                 &:hover::after {
                     transform: scaleX(1);
                 }
+            }
+
+            /* Style for active menu item */
+            .active {
+                color: $accentColor;
             }
         }
     }
