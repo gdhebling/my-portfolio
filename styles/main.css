@@ -232,6 +232,11 @@ header .nav__links li .active {
   color: #78909C;
 }
 
+header .nav__links li .active::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
 header .social-media {
   list-style: none;
   display: -webkit-box;

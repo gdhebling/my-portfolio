@@ -1,13 +1,17 @@
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav__links');
+const navLinks = document.querySelectorAll('.nav__links li a');
+const navItems = document.querySelectorAll('.nav__links li');
+
+/* Header shrink on scroll */
 window.addEventListener('scroll', function () {
     let header = document.querySelector('header');
     let windowPosition = window.scrollY > 0;
     header.classList.toggle('scrolling-active', windowPosition);
 })
 
+/* Nav slide and animation on burger menu click */
 const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav__links');
-    const navLinks = document.querySelectorAll('.nav__links li');
 
     burger.addEventListener('click', () => {
 
@@ -15,7 +19,7 @@ const navSlide = () => {
         nav.classList.toggle('nav-active');
 
         // Animate Links
-        navLinks.forEach((link, index) => {
+        navItems.forEach((link, index) => {
             if (link.style.animation) {
                 link.style.animation = ''
             } else {
@@ -31,9 +35,7 @@ const navSlide = () => {
 
 navSlide();
 
-
-const navLinks = document.querySelectorAll('.nav__links li a');
-
+/* Active Menu Status */
 navLinks.forEach(button => {
     button.addEventListener('click', function () {
         navLinks.forEach(btn => btn.classList.remove('active'));

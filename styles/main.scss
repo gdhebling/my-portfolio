@@ -249,6 +249,10 @@ header {
             /* Style for active menu item */
             .active {
                 color: $accentColor;
+
+                &::after {
+                    transform: scaleX(1);
+                }
             }
         }
     }
