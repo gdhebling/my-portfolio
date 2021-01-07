@@ -2,9 +2,7 @@ const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav__links');
 const navLinks = document.querySelectorAll('.nav__links li a');
 const navItems = document.querySelectorAll('.nav__links li');
-
 const sections = document.querySelectorAll('section');
-
 
 /* Header shrink and active menu on scroll */
 window.addEventListener('scroll', function () {
@@ -13,9 +11,7 @@ window.addEventListener('scroll', function () {
     header.classList.toggle('scrolling-active', windowPosition);
 
     let index = sections.length;
-
     while (--index && window.scrollY + 400 < sections[index].offsetTop) { }
-
     navLinks.forEach((link) => link.classList.remove('active'));
     navLinks[index].classList.add('active');
 })
