@@ -9,6 +9,7 @@ $darkColor: #37474F;
 $accentColor: #78909C;
 $darkGreyColor: #212121;
 $lightGreyColor: #fdfdfd;
+$highlightColor: #C6F8FF;
 
 $transition: 0.3s ease;
 
@@ -54,6 +55,11 @@ img {
 input,
 textarea {
     outline: none;
+}
+
+::selection {
+    color: $bodyFontColor;
+    background-color: $highlightColor;
 }
 
 // Scrolling fix
