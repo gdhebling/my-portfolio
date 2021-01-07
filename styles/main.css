@@ -619,7 +619,7 @@ header .burger div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 80vh;
+  min-height: 80vh;
 }
 
 .contact .contact__content {
