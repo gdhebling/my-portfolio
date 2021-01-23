@@ -39,3 +39,5 @@ const navSlide = () => {
 };
 
 navSlide();
+
+console.log("Hi there! 🙂");
