@@ -16,26 +16,38 @@ window.addEventListener("scroll", function () {
   navLinks[index].classList.add("active");
 });
 
-/* Nav slide and animation on burger menu click */
+/* Nav slide, menu close on click, and menu items animation */
 const navSlide = () => {
+  // Close after click
+  navItems.forEach((link) => {
+    link.addEventListener("click", () => {
+      burger.classList.toggle("toggle");
+      nav.classList.toggle("nav-active");
+      if (window.matchMedia("(max-width: 780px)").matches) {
+        navItems.forEach(setStyleLink);
+      }
+    });
+  });
+
   burger.addEventListener("click", () => {
     // Toggle Nav
     nav.classList.toggle("nav-active");
 
     // Animate Links
-    navItems.forEach((link, index) => {
-      if (link.style.animation) {
-        link.style.animation = "";
-      } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${
-          index / 5 + 0.5
-        }s`;
-      }
-    });
+    navItems.forEach(setStyleLink);
 
     // Burger Animation
     burger.classList.toggle("toggle");
   });
+};
+
+// Menu items animation funtcion
+const setStyleLink = (link, index) => {
+  if (link.style.animation) {
+    link.style.animation = "";
+  } else {
+    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0.3}s`;
+  }
 };
 
 navSlide();
