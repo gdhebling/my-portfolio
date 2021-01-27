@@ -1,7 +1,7 @@
 /* Variables 
 =============== */
-$titleFont: "Nunito", sans-serif;
-$bodyFont: "Open Sans", sans-serif;
+$titleFont: 'Nunito', sans-serif;
+$bodyFont: 'Open Sans', sans-serif;
 $bodyFontColor: #212121;
 $darkColor: #37474f;
 $accentColor: #78909c;
@@ -76,7 +76,7 @@ textarea {
   position: relative;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 30%;
@@ -141,7 +141,7 @@ textarea {
   }
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: 0;
@@ -227,7 +227,7 @@ header {
         }
 
         &::after {
-          content: "";
+          content: '';
           position: absolute;
           left: 0;
           bottom: -1px;
@@ -580,7 +580,7 @@ header {
       font-weight: bold;
     }
 
-    input[type="text"],
+    input[type='text'],
     textarea {
       margin: auto;
       display: block;
@@ -597,11 +597,11 @@ header {
       transition: $transition;
     }
 
-    input[type="text"]:hover,
+    input[type='text']:hover,
     textarea:hover,
-    input[type="text"]:active,
+    input[type='text']:active,
     textarea:active,
-    input[type="text"]:focus,
+    input[type='text']:focus,
     textarea:focus {
       border: 1px solid $darkColor;
     }
@@ -611,7 +611,7 @@ header {
       font-family: $bodyFont;
     }
 
-    input[type="submit"] {
+    input[type='submit'] {
       margin-left: auto;
     }
   }
@@ -836,7 +836,7 @@ footer {
     width: 90%;
 
     form {
-      input[type="submit"] {
+      input[type='submit'] {
         margin: auto;
       }
     }
@@ -910,7 +910,7 @@ footer {
 
   form {
     label,
-    input[type="text"],
+    input[type='text'],
     textarea {
       font-size: 2rem;
     }
