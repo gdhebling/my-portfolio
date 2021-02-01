@@ -11,9 +11,10 @@ Clean and modern web design for my portfolio.
 
 You can find the deployed website at https://gdhebling.com/
 <br /><br />
-This website was created using a previously coded website as a base, with increments and changes.  
+The website is now ported to a Gatsby + Sanity project.  
+This is the code repository for the original project using vanilla HTML, SCSS, JavaScript.  
+
 The goal was to write reusable code and design concepts.  
-You can find the full conception process of this project at https://github.com/gdhebling/photographer-portfolio.
 
 ## Technologies and tools used
 
