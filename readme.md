@@ -10,10 +10,11 @@ Clean and modern web design for my portfolio.
 ### Deployed website
 
 You can find the deployed website at https://gdhebling.com/
-<br /><br />
-The website is now ported to a Gatsby + Sanity project.  
-This is the code repository for the original project using vanilla HTML, SCSS, JavaScript.  
 
+**The website is now ported to a Gatsby + Sanity project.**
+  
+**This is the code repository for the original project using vanilla HTML, SCSS, JavaScript.**
+  
 The goal was to write reusable code and design concepts.  
 
 ## Technologies and tools used
