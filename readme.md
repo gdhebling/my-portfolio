@@ -5,15 +5,16 @@
 My Front-End Developer Portfolio.  
 Clean and modern web design for my portfolio.
 <br /><br />
+**The website is now ported to a Gatsby + Sanity project.**
+  
+**This is the code repository for the original project using vanilla HTML, SCSS, JavaScript.**
+
 <a href="https://gdhebling.com/" alt="Website Screenshot">![Website Screenshot](img/portfolio-website-screenshot.png)</a>
 
 ### Deployed website
 
 You can find the deployed website at https://gdhebling.com/
 
-**The website is now ported to a Gatsby + Sanity project.**
-  
-**This is the code repository for the original project using vanilla HTML, SCSS, JavaScript.**
   
 The goal was to write reusable code and design concepts.  
 
