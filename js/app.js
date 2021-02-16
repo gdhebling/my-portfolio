@@ -16,6 +16,24 @@ window.addEventListener('scroll', function () {
   navLinks[index].classList.add('active');
 });
 
+/* Email encryption using ROT13 */
+const decodeCharacter = (char) => {
+  return char.replace(/[a-zA-Z]/g, (character) => {
+    return String.fromCharCode(
+      (character <= 'Z' ? 90 : 122) >= (character = character.charCodeAt(0) + 13)
+        ? character
+        : character - 26
+    );
+  });
+};
+
+const openMailer = (element) => {
+  const decoded = decodeCharacter('znvygb:tquroyvat@bhgybbx.pbz?fhowrpg=Pbagnpg sebz Cbegsbyvb');
+  element.setAttribute('href', decoded);
+  element.setAttribute('onclick', '');
+  element.firstChild.nodeValue = 'Click to email';
+};
+
 /* Nav slide, menu close on click, and menu items animation */
 const navSlide = () => {
   // Close after click
